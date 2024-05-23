@@ -1,0 +1,157 @@
+/* Your existing styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/* ... (Your existing styles) ... */
+
+/* Media Queries for responsiveness */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+    .search-box {
+        width: 70vw;
+    }
+
+    .main-container img {
+        width: 45%;
+    }
+
+    nav ul {
+        padding: 0 20px;
+    }
+
+    nav ul li {
+        font-size: medium;
+        padding: 15px;
+    }
+}
+
+/* Smartphones and small tablets */
+@media (max-width: 768px) {
+    .search-box {
+        width: 80vw;
+    }
+
+    .main-container img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        font-size: small;
+        padding: 10px;
+    }
+}
+
+/* Galaxy Fold and similar devices */
+@media (max-width: 412px) and (max-height: 915px) {
+    .search-box {
+        width: 90vw;
+    }
+
+    .main-container img {
+        width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 10px;
+    }
+
+    nav ul li {
+        font-size: small;
+        padding: 10px;
+    }
+}
+
+/* iPad and large tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 0; /* Adjust margin if needed */
+        margin-top: 10px; /* Adjust margin if needed */
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: medium;
+        padding: 15px;
+    }
+}
+
+/* Phones like Samsung M21, Realme */
+@media (max-width: 360px) {
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 0; /* Adjust margin if needed */
+        margin-top: 10px; /* Adjust margin if needed */
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: small;
+        padding: 10px;
+    }
+}
+
+/* Nest Hub and similar small devices */
+@media (max-width: 240px) {
+    nav {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-left: 0; /* Adjust margin if needed */
+        margin-top: 10px; /* Adjust margin if needed */
+        position: absolute;
+        top: 30%;
+        left:32%;
+    }
+    .overlay-text h1{
+        font-size: small;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        font-size: small;
+        padding: 10px;
+    }
+}
+
+/* Further customization for smaller screens if needed */
